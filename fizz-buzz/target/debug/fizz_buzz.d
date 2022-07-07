@@ -1,0 +1,1 @@
+/Users/devwenzel/Repositories/Learning/Rust/Katas/FizzBuzz/target/debug/fizz_buzz: /Users/devwenzel/Repositories/Learning/Rust/Katas/FizzBuzz/src/fizzbuzzer/fizz_buzzer.rs /Users/devwenzel/Repositories/Learning/Rust/Katas/FizzBuzz/src/fizzbuzzer.rs /Users/devwenzel/Repositories/Learning/Rust/Katas/FizzBuzz/src/main.rs
