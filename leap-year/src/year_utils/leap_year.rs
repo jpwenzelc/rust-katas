@@ -1,16 +1,15 @@
-struct Date {
-    year: u32,
+pub trait DivisionUtility {
+    fn is_divisible_by(&self, denominator: u32) -> bool;
 }
 
-impl Date {
+impl DivisionUtility for u32 {
     fn is_divisible_by(&self, denominator: u32) -> bool {
-        self.year % denominator == 0
+        self % denominator == 0
     }
 }
 
 pub fn is_leap(year: u32) -> bool {
-    let year = Date { year };
-    return year.is_divisible_by(4) && !(year.is_divisible_by(100) && !year.is_divisible_by(400));
+    year.is_divisible_by(4) && !(year.is_divisible_by(100) && !year.is_divisible_by(400))
 }
 
 #[cfg(test)]
