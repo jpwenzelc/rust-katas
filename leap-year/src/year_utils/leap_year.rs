@@ -15,7 +15,6 @@ pub fn is_leap(year: u32) -> bool {
 #[cfg(test)]
 mod tests {
     use rstest::rstest;
-
     use super::is_leap;
 
     #[rstest]
