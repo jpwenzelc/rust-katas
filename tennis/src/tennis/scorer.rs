@@ -9,13 +9,13 @@ pub fn calculate_score(player_1_score: u8, player_2_score: u8) -> String {
                 return advantage_output(player_1_score, player_2_score);
             }
             return String::from("player 1 wins!");
-        },
+        }
         (false, true) => {
             if player_1_score == 3 {
                 return advantage_output(player_1_score, player_2_score);
             }
             return String::from("player 2 wins!");
-        },
+        }
         (true, true) => match player_1_score.abs_diff(player_2_score) {
             1 => return advantage_output(player_1_score, player_2_score),
             _ => return winner_output(player_1_score, player_2_score),
